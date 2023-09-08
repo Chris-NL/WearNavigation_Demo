@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WearNavigation</string>
+    <string-array name="wear_draweritems_array_names">
+        <item>first_fragment</item>
+        <item>second_fragment</item>
+        <item>third_fragment</item>
+    </string-array>
+    <string-array name="first_fragment">
+        <item>fragment_one</item>
+        <item>ic_headphones</item>
+    </string-array>
+    <string-array name="second_fragment">
+        <item>fragment_two</item>
+        <item>ic_mic</item>
+    </string-array>
+    <string-array name="third_fragment">
+        <item>fragment_three</item>
+        <item>ic_speaker</item>
+    </string-array>
+    <string name="fragment_one">Fragment one</string>
+    <string name="fragment_two">Fragment two</string>
+    <string name="fragment_three">Fragment three</string>
+    <string name="action_one">Action one</string>
+    <string name="action_two">Action two</string>
+</resources>

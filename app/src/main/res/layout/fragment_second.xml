@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:scrollbars="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="30dp"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Second Fragment"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbSettingOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:tag="cbVibrateOnPause"
+        android:text="Setting one"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbSettingTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:tag="cbVibrateOnInjury"
+        android:text="Setting two"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSettingOne" />
+
+    <TextView
+        android:id="@+id/tvSettingThreeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting three"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSettingTwo" />
+
+    <SeekBar
+        android:id="@+id/sbSettingThree"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:max="5"
+        android:min="1"
+        android:progress="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingThreeLabel" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbSettingFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:tag="cbVibrateOnWarnAtPauseEnd"
+        android:text="Setting four"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbSettingThree" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbSettingFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:enabled="false"
+        android:minHeight="48dp"
+        android:tag="cbUseSound"
+        android:text="Setting five"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSettingFour" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbSettingSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:tag="cbUseCountDownTimer"
+        android:text="Setting six"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSettingFive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
